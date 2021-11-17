@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Website</title>
+    <link rel="stylesheet" href="../../../css/style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/lightslider.css">
+    <!--js-link--------------------->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
+    <!--fav-icon---------->
+    <link rel="shortcut icon" href="images/fav icon.png" />
+    <!--using FontAwesome------------>
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="#" class="logo">
+            <img src="images/logo.png" />
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Hollywood</a></li>
+            <li><a href="#">Horror</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input type="text" placeholder="Find Your Favourtie Movies" />
+            <!--search-icon----------->
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+    <section class="ep1">
+        &nbsp;
+        <div class="player">
+            <video id="example-player">
+                <source src="https://harshdrive0070.megaashgreninja77.workers.dev/1:/Alola/S20E01.mkv"
+                    type="video/mp4" />
+            </video>
+        </div>
+    </section>
+    <script>
+        // fluidPlayer method is global when CDN distribution is used.
+        var player = fluidPlayer('example-player');
+    </script>
+
+</body>
+
+</html>
