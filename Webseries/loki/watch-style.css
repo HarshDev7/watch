@@ -1,0 +1,51 @@
+.vid {
+  display: flex;
+  align-self: center;
+  margin: auto;
+}
+h1,
+h2,
+p {
+  color: white;
+}
+
+/* body::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+  font-weight: bold;
+} */
+
+.player {
+  align-content: center;
+  align-items: center;
+
+  justify-content: center;
+  text-align: center;
+  padding-top: 110px;
+  /* display: inline-block; */
+}
+
+.buttons {
+  /* justify-content: center;
+  align-items: center;
+  align-content: center; */
+  /* border: 2px solid greenyellow; */
+  display: block;
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+.buttons button {
+  margin: 7px;
+  background-color: white;
+  height: 28px;
+  width: 34px;
+  border: 2px solid rgb(119, 230, 45);
+  font-weight: bolder;
+}
+
+.txt {
+  text-align: center;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="watch-style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <!--logo--------------->
+        <a href="#" class="logo">
+            <img src="images/logo.png" />
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Hollywood</a></li>
+            <li><a href="#">Horror</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input type="text" placeholder="Find Your Favourtie Movies" />
+            <!--search-icon----------->
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+    <section class="vid">
+        <div class="buttons">
+            <h2>Episodes</h2>
+            <button onclick="setURL('https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=1')" id="1">1</button>
+            <button onclick="setURL('https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=2')" id="2">2</button>
+            <button onclick="setURL('https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=3')" id="3">3</button>
+            <button onclick="setURL('https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=4')" id="4">4</button>
+            <button onclick="setURL('https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=5')" id="5">5</button>
+            <button onclick="setURL('https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=6')" id="6">6</button>
+        </div>
+        <div class="player">
+            <div class="playersrc">
+                <iframe id="iframe" width="600px" height="270px"
+                    src="https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=1" allowfullscreen
+                    frameborder="1"></iframe>
+            </div>
+        </div>
+        <div class="trend">
+
+        </div>
+    </section>
+
+
+    <div class="txt">
+        <p>The mercurial villain Loki resumes his role as the God of Mischief in a new series that takes place after the
+            events of “Avengers: Endgame.”</p>
+    </div>
+    <div class="img">
+        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg" alt="">
+    </div>
+    <script type="text/javascript">
+        function setURL(url) {
+            document.getElementById('iframe').src = "https://vidclouds.us/tv.php?imdb=tt9140554&season=1&episode=2";
+        }
+    </script>
+</body>
+
+</html>

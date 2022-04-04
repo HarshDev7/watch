@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  content: "";
+  background-image: url(../../img/1007550.jpg);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* opacity: 0.2; */
+}
+#info {
+  margin: 30px;
+  padding-top: 80px;
+  padding: 80px 110px;
+  text-align: center;
+}
+h1,
+p {
+  padding: 22px;
+  color: white;
+  /* width: 600px; */
+  font-weight: bolder;
+}
+.watch {
+  background-color: aqua;
+  color: black;
+  height: 55px;
+  width: 110px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  border: 2px solid black;
+  font-weight: bolder;
+  font-size: 20px;
+  margin: 30px;
+  cursor: pointer;
+}
+.txt {
+  background-color: rgb(109, 93, 93);
+  opacity: 0.6;
+}

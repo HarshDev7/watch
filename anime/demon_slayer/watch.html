@@ -7,98 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies Website</title>
     <link rel="stylesheet" href="../../css/style.css" />
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/plyr.css" />
-    <script src="https://cdn.plyr.io/3.6.9/plyr.js"></script>
-
+    <link rel="stylesheet" href="styled.css">
     <link rel="stylesheet" href="css/lightslider.css">
     <link rel="shortcut icon" href="images/fav icon.png" />
-    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.9/demo.css" />
     <!--js-link--------------------->
     <script src="js/JQuery3.3.1.js"></script>
     <script src="js/lightslider.js"></script>
-    <script src="https://cdn.fluidplayer.com/v3/current/fluidplayer.min.js"></script>
     <!--fav-icon---------->
     <!--using FontAwesome------------>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <style>
-        ul {
-            list-style: none;
-        }
 
-        a {
-            text-decoration: none;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            width: 100%;
-            border: 1px solid rgba(0, 0, 0, 0.04);
-            background-color: #ffffff;
-            position: fixed;
-            left: 0;
-            top: 0;
-            z-index: 100;
-        }
-
-        .logo img {
-            height: 35px;
-        }
-
-        nav .menu {
-            display: flex;
-        }
-
-        nav .menu li a {
-            height: 40px;
-            line-height: 43px;
-            margin: 0px;
-            padding: 0px 22px;
-            display: flex;
-            font-size: 0.8rem;
-            text-transform: uppercase;
-            font-weight: 500;
-            color: #585858;
-            letter-spacing: 1px;
-        }
-
-        .search {
-            width: 250px;
-            height: 40px;
-            background-color: rgba(245, 245, 245, 0.8);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 20px;
-            padding: 0px 20px;
-        }
-
-        .search input {
-            font-size: 12px;
-            width: 100%;
-            height: 30px;
-            border: none;
-            outline: none;
-            background-color: transparent;
-        }
-
-        .search i {
-            color: #3a3a3a;
-        }
-
-        nav .menu li a:hover {
-            background-color: #242424;
-            color: #ffffff;
-            box-shadow: 5px 10px 30px rgba(53, 53, 53, 0.1);
-            transition: all ease 0.2s;
-        }
-
-        #main {
-            padding-top: 80px;
-            background-color: #ffffff;
-        }
-    </style>
 </head>
 
 <body>
@@ -129,16 +47,94 @@
         </div>
     </nav>
     <section class="ep1">
-        <div id="player" class="ep1">
-            <iframe src="https://drive.google.com/file/d/10xcgwfmqa9mAzEKJWpgb2iCuKyGNiHCW/preview" allowfullscreen
-                allowtransparency allow="autoplay"></iframe>
-        </div>
-        <div class="plyr__video-embed" id="player">
-            <iframe src="https://drive.google.com/file/d/10xcgwfmqa9mAzEKJWpgb2iCuKyGNiHCW/preview" allowfullscreen
-                allowtransparency allow="autoplay"></iframe>
-        </div>
+        <iframe id="iframe" src="https://drive.google.com/file/d/10xcgwfmqa9mAzEKJWpgb2iCuKyGNiHCW/preview" width="640"
+            height="480" allow="autoplay" allowfullscreen="true"></iframe>
+
     </section>
-    <script src="https://cdn.plyr.io/3.6.9/demo.js" crossorigin="anonymous"></script>
+    <section>
+        <h1 class="midtext">Select Episode</h1>
+        <div class="eps">
+
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10xcgwfmqa9mAzEKJWpgb2iCuKyGNiHCW/preview`)">1</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10tjeOTYaT5ul77p45tQNzr9NULJhm6AY/preview`)">2</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-3ZseqmqJhnaoIfeRxvFzatjSkuQAanJ/preview`)">3</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-3uxYWRu4Go1BAr1yTf44aXATJCh9QF2/preview`)">4</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-9Fjv0mBQxc96dJPsORlsZez2GU5IClA/preview`)">5</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-CrHNhHEdlLBwJa0T2hrdwtCZ4GVkLi2/preview`)">6</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-PxFcN3qTUaMLiJDnMRnb0VwxcuGlPd0/preview`)">7</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-Z_l1OWHErdVDbVcVQkJ-ZK377R0WpJn/preview`)">8</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-ahG7ikUIXxUHJN86gbEv_ZH7QNkDuR-/preview`)">9</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-SH0HIWxHRNy2XIxmg-8xWGxVhC6dkYo/preview`)">10</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-VfEqmR6-N77HwN_wk5YU5bASQf4NAmP/preview`)">11</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-QPDU8vlNrWH5zkZmAS_5H2MH-_-Qr9p/preview`)">12</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10DvkiMibRKiryvH4_Nbyn4hPbvdgWJNC/preview`)">13</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/101fsQEhZe-l6Aq0sWaAvzNeXH0R-u3BS/preview`)">14</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10Ty0re3aXx_dRwP6ZtMLERRNHcjZ7vQx/preview`)">15</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10P5pWxuS0xLCvLBLr0-tlH12SDFjBgYm/preview`)">16</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10UlHrJ9xkqfmmKUmAJ4rM8CiIILJGgIa/preview`)">17</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10U6leDrfr_Sh97unLgsOk3pM8NjyoNEw/preview`)">18</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/105l46iM7NBy_65zd-WPnJp7RpFd-RQZQ/preview`)">19</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10ismeLEzjIa-MU03HjT9co484UsppvyR/preview`)">20</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10OGWaXZrZ_znfpsXk4HX8CuipflgzVuP/preview`)">21</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-ujj_fvv0dVSjfnWxfuJOIvMiga6bdEz/preview`)">22</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-dNa4vczK-LF9nCNmkDxrXtqn-3CixFG/preview`)">23</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/1-sb4DZeopj607h6jtmPlNAarLW_KzyB9/preview`)">24</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10itCcPaluOxPkmCHzeOEoplRoP2H9D4h/preview`)">25</button>
+            <button
+                onclick="setURL(`https://drive.google.com/file/d/10mt0iu3Tzv-sv_oSLXepT-MnlbOhfhOK/preview`)">26</button>
+        </div>
+        <h1 class="midtext">Select Season</h1>
+    </section>
+    <div class="season">
+        <button class='seas' onclick="window.location.href='watch.html'">Season 1</button>
+        <button class='seas' onclick="window.location.href='season2.html'">Season 2</button>
+        <button class='seas' onclick="window.location.href='season3.html'">Season 3</button>
+        <button class='seas' onclick="window.location.href='movie.html'">Mugen Train Movie</button>
+    </div>
+    <br>
+    <section id="info">
+        <div class="txt">
+            <h1>Kimetsu no Yaiba(Demon Slayer)</h1>
+            <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his
+                family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole survivor, has
+                been
+                transformed into a demon herself. Though devastated by this grim reality, Tanjiro resolves to become a
+                “demon slayer” so that he can turn his sister back into a human, and kill the demon that massacred his
+                family.
+                (Source: Crunchyroll)</p>
+        </div>
+
+    </section>
+    <script>
+        function setURL(url) {
+            document.getElementById('iframe').src = url;
+        }
+    </script>
 </body>
 
 </html>
